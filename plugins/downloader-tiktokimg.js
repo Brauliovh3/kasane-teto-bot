@@ -2,8 +2,8 @@ import fetch from 'node-fetch'
 import cheerio from 'cheerio'
 
 let handler = async (m, { conn, usedPrefix, command, args }) => {
-    if (!args[0]) return conn.reply(m.chat, `💙 Sensei, ingresa un link de TikTok que contenga imágenes ✨`, m, rcanal)
-    if (!args[0].match(/tiktok/gi)) return conn.reply(m.chat, `💙 Ara ara~ Verifica que el link sea de TikTok, Sensei 📱`, m, rcanal)
+    if (!args[0]) return conn.reply(m.chat, `❤ ¡Teto necesita un link de TikTok que contenga imágenes! 🥖`, m, rcanal)
+    if (!args[0].match(/tiktok/gi)) return conn.reply(m.chat, `❤ ¡Ups! Verifica que el link sea de TikTok 🎤`, m, rcanal)
     
     await m.react('⏳')
     
@@ -33,20 +33,20 @@ let handler = async (m, { conn, usedPrefix, command, args }) => {
             
             if (videoData && videoData.imagePost && videoData.imagePost.images) {
                 let txt = '┏━━━━━━━━━━━━━━━━━━┓\n'
-                txt += '┃💙 𝐓𝐢𝐤𝐓𝐨𝐤 𝐈𝐦𝐚𝐠𝐞 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐞𝐫 💙┃\n'
+                txt += '┃❤ 𝐓𝐢𝐤𝐓𝐨𝐤 𝐈𝐦𝐚𝐠𝐞 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐞𝐫 ❤┃\n'
                 txt += '┗━━━━━━━━━━━━━━━━━━━┛\n'
                 txt += '╭───────────╮\n'
-                txt += '│✨ 𝐀𝐥𝐮𝐦𝐧𝐚 𝐈𝐧𝐟𝐨 ✨│\n'
+                txt += '│🎤 ���� 𝐈𝐧𝐟𝐨 🎤│\n'
                 txt += '├──────────┤\n'
                 txt += `│👤 𝐔𝐬𝐮𝐚𝐫𝐢𝐨: ${videoData.author.nickname}\n`
                 txt += `│📝 𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐜𝐢ó𝐧: ${videoData.desc}\n`
                 txt += `│🖼️ 𝐈𝐦á𝐠𝐞𝐧𝐞𝐬: ${videoData.imagePost.images.length}\n`
                 txt += '├─────────────────┤\n'
-                txt += '│💙 𝐍𝐨𝐳𝐨𝐦𝐢 𝐆𝐞𝐧𝐞𝐫𝐚𝐭𝐢𝐧𝐠 𝐈𝐦𝐚𝐠𝐞𝐬... 💙│\n'
+                txt += '│❤ ���𝐨 𝐆𝐞𝐧𝐞𝐫𝐚𝐧𝐝� 𝐈𝐦á𝐠��𝐞𝐬... ❤│\n'
                 txt += '╰────────────────╯\n'
                 txt += '♪(´▽｀)♪\n'
                 txt += '╭─────────────────────╮\n'
-                txt += '│"Sensei, aquí están tus imágenes~"│\n'
+                txt += '│"¡Aquí están tus imágenes! 🥖"│\n'
                 txt += '╰─────────────────────╯\n'
                 
                 for (let i = 0; i < videoData.imagePost.images.length; i++) {
@@ -73,12 +73,12 @@ let handler = async (m, { conn, usedPrefix, command, args }) => {
                         const imageBuffer = await imageResponse.buffer()
                         
                         let imageCaption = '┏━━━━━━━━━━━━━━━━━━━━━┓\n'
-                        imageCaption += '┃💙 𝐓𝐚𝐜𝐡𝐢𝐛𝐚𝐧𝐚 𝐍𝐨𝐳𝐨𝐦𝐢 𝐃𝐞𝐥𝐢𝐯𝐞𝐫𝐲 💙┃\n'
+                        imageCaption += '┃❤ �𝐚�𝐧� ���𝐨 𝐃𝐞𝐥𝐢𝐯𝐞𝐫𝐲 ❤┃\n'
                         imageCaption += '┗━━━━━━━━━━━━━━━━━━━━━━━━┛\n'
                         imageCaption += '╭──────────────────╮\n'
                         imageCaption += `│🖼️ 𝐈𝐦𝐚𝐠𝐞𝐧 #${i + 1} 𝐝𝐞 ${videoData.imagePost.images.length}│\n`
                         imageCaption += '├──────────────────┤\n'
-                        imageCaption += '│✨ 𝐓𝐢𝐤𝐓𝐨𝐤 𝐈𝐦𝐚𝐠𝐞 ✨ \n'
+                        imageCaption += '│🎤 𝐓𝐢𝐤𝐓𝐨𝐤 𝐈𝐦𝐚𝐠𝐞 🎤 \n'
                         imageCaption += '├──────────────────┤\n'
                         imageCaption += `│ 👤 𝐂𝐫𝐞𝐚𝐝𝐨𝐫: ${videoData.author.nickname}\n`
                         imageCaption += `│ 📱 𝐏𝐥𝐚𝐭𝐚𝐟𝐨𝐫𝐦𝐚: TikTok\n`
@@ -86,32 +86,32 @@ let handler = async (m, { conn, usedPrefix, command, args }) => {
                         imageCaption += '╰─────────────────╯\n'
                         imageCaption += '｡◕‿◕｡\n'
                         imageCaption += '╭───────────────╮\n'
-                        imageCaption += '│"Ara ara~ ¿Te gusta, Sensei?"│\n'
+                        imageCaption += '│"¡Espero que te guste! 🥖"│\n'
                         imageCaption += '╰──────────────╯\n'
-                        imageCaption += '💙 𝐁𝐥𝐮𝐞 𝐀𝐫𝐜𝐡𝐢𝐯𝐞 𝐒𝐭𝐲𝐥𝐞 💙'
+                        imageCaption += '❤ 𝐊𝐚���𝐞 ���� 𝐒𝐭𝐲𝐥𝐞 ❤'
                         
-                        await conn.sendFile(m.chat, imageBuffer, `nozomi_tiktok_${i + 1}.jpg`, imageCaption, m, null, rcanal)
+                        await conn.sendFile(m.chat, imageBuffer, `teto_tiktok_${i + 1}.jpg`, imageCaption, m, null, rcanal)
                     } else {
-                        console.log(`💙 Nozomi: Error descargando imagen ${i + 1}: ${imageResponse.status}`)
+                        console.log(`❤ Teto: Error descargando imagen ${i + 1}: ${imageResponse.status}`)
                     }
                 }
                 
-                await m.react('💙')
+                await m.react('❤')
                 
                 
                 let finalMsg = '┏━━━━━━━━━━━━━┓\n'
-                finalMsg += '┃💙 𝐌𝐢𝐬𝐢ó𝐧 𝐂𝐨𝐦𝐩𝐥𝐞𝐭𝐚𝐝𝐚 💙┃\n'
+                finalMsg += '┃❤ 𝐌𝐢𝐬𝐢ó𝐧 𝐂𝐨𝐦𝐩𝐥𝐞𝐭𝐚𝐝𝐚 ❤┃\n'
                 finalMsg += '┗━━━━━━━━━━━━━━━━┛\n'
                 finalMsg += '╭────────────╮\n'
-                finalMsg += '│✨ 𝐑𝐞𝐬𝐮𝐥𝐭𝐚𝐝𝐨 ✨│\n'
+                finalMsg += '│🎤 𝐑𝐞𝐬𝐮𝐥𝐭𝐚𝐝𝐨 🎤│\n'
                 finalMsg += '├────────────┤\n'
                 finalMsg += `│📸 𝐈𝐦á𝐠𝐞𝐧𝐞𝐬 𝐞𝐧𝐯𝐢𝐚𝐝𝐚𝐬: ${videoData.imagePost.images.length}\n`
                 finalMsg += '│🎯 𝐄𝐬𝐭𝐚𝐝𝐨: Completado exitosamente\n'
-                finalMsg += '│💙 𝐀𝐠𝐞𝐧𝐭𝐞: Tachibana Nozomi\n'
+                finalMsg += '│❤ 𝐀𝐠𝐞𝐧𝐭𝐞: Kasane Teto\n'
                 finalMsg += '├─────────────────────┤\n'
-                finalMsg += '│"¡Misión cumplida, Sensei! (◕‿◕)♡"│\n'
+                finalMsg += '│"¡Misión cumplida! (◕‿◕)♡ 🥖"│\n'
                 finalMsg += '╰─────────────────────╯\n'
-                finalMsg += '💙 𝐆𝐫𝐚𝐜𝐢𝐚𝐬 𝐩𝐨𝐫 𝐮𝐬𝐚𝐫𝐦𝐞 💙'
+                finalMsg += '❤ 𝐆𝐫𝐚𝐜𝐢𝐚𝐬 𝐩𝐨𝐫 𝐮𝐬𝐚𝐫𝐦𝐞 ❤'
                 
                 await conn.reply(m.chat, finalMsg, m, rcanal)
                 return
@@ -130,13 +130,13 @@ let handler = async (m, { conn, usedPrefix, command, args }) => {
         errorMsg += '╭──────────╮\n'
         errorMsg += '│⚠️ 𝐀𝐥𝐞𝐫𝐭𝐚 ⚠️│\n'
         errorMsg += '────────────┤\n'
-        errorMsg += '│💙 Nozomi: "Ara ara~ Sensei, algo salió mal..."\n'
+        errorMsg += '│❤ Teto: "¡Ups! Algo salió mal..."\n'
         errorMsg += '│🔍 Verifica que el link contenga imágenes\n'
         errorMsg += '│📱 Asegúrate de que sea un link válido de TikTok\n'
         errorMsg += '├───────────────────┤\n'
-        errorMsg += '│"¡Inténtalo de nuevo, Sensei! (｡•́︿•̀｡)"│\n'
+        errorMsg += '│"¡Inténtalo de nuevo! (｡•́︿•̀｡) 🥖"│\n'
         errorMsg += '╰───────────────────╯\n'
-        errorMsg += '💙 𝐓𝐚𝐜𝐡𝐢𝐛𝐚𝐧𝐚 𝐍𝐨𝐳𝐨𝐦𝐢 💙'
+        errorMsg += '❤ �𝐚�𝐚𝐧� ���𝐨 ❤'
         
         conn.reply(m.chat, errorMsg, m, rcanal)
     }

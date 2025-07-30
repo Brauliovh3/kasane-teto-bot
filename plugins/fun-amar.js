@@ -10,7 +10,7 @@ let handler = async (m, { conn, usedPrefix }) => {
     let user = global.db.data.users[who];
     let name = conn.getName(who);
     let name2 = conn.getName(m.sender);
-    m.react('💙');
+        m.react('❤');
     let str = `💚${name2} Está enamorad@ de ${name}`.trim();
     if (m.isGroup){
     

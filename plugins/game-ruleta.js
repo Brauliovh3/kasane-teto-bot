@@ -7,13 +7,13 @@ let handler = async (m, { conn, text, command, usedPrefix }) => {
   
   if (cooldowns[m.sender] && Date.now() - cooldowns[m.sender] < tiempoEspera * 1000) {
     let tiempoRestante = segundosAHMS(Math.ceil((cooldowns[m.sender] + tiempoEspera * 1000 - Date.now()) / 1000))
-    conn.reply(m.chat, `💙 Ya has iniciado una apuesta recientemente, espera *⏱ ${tiempoRestante}* para apostar nuevamente`, m, rcanal)
+    conn.reply(m.chat, `❤ ¡Teto está ocupada cantando! Espera *⏱ ${tiempoRestante}* para apostar nuevamente con 🥖 baguettes`, m, rcanal)
     return
   }
   
   cooldowns[m.sender] = Date.now()
 
-  if (!text) return conn.reply(m.chat, `💙 Debes ingresar una cantidad de *🌱 Cebollines* y apostar a un color, por ejemplo: *${usedPrefix + command} 20 black*`, m, rcanal)
+  if (!text) return conn.reply(m.chat, `❤ ¡Teto quiere jugar! Debes ingresar una cantidad de *🥖 Baguettes* y apostar a un color, por ejemplo: *${usedPrefix + command} 20 black*`, m, rcanal)
 
   let args = text.trim().split(" ")
   if (args.length !== 2) return conn.reply(m.chat, `❤ Formato incorrecto. Debes ingresar una cantidad de *🥖 Baguettes* y apostar a un color, por ejemplo: *${usedPrefix + command} 20 black*`, m, rcanal)
@@ -27,9 +27,9 @@ let handler = async (m, { conn, text, command, usedPrefix }) => {
 
   if (!(color === 'black' || color === 'red')) return conn.reply(m.chat, "❤ Debes apostar a un color válido: *black* o *red*.", m, rcanal)
 
-  if (limit > users.limit) return conn.reply(m.chat, "💙 No tienes suficientes *🌱 Cebollines* para realizar esa apuesta.", m, rcanal)
+  if (limit > users.limit) return conn.reply(m.chat, "❤ ¡Teto no puede prestarte! No tienes suficientes *🥖 Baguettes* para realizar esa apuesta.", m, rcanal)
   
-  await conn.reply(m.chat, `💙 Apostaste ${limit} *🌱 Cebollines* al color ${color}. Espera *⏱ 10 segundos* para conocer el resultado.`, m, rcanal)
+  await conn.reply(m.chat, `❤ ¡Teto está emocionada! Apostaste ${limit} *🥖 Baguettes* al color ${color}. Espera *⏱ 10 segundos* para conocer el resultado.`, m, rcanal)
 
   setTimeout(() => {
     let result = Math.random()
@@ -43,10 +43,10 @@ let handler = async (m, { conn, text, command, usedPrefix }) => {
     
     if (win) {
       users.limit += limit
-      conn.reply(m.chat, `💙 ¡Ganaste! Obtuviste ${limit} *🌱 Cebollines*. Total: ${users.limit} *🌱 Cebollines*.`, m, rcanal)
+      conn.reply(m.chat, `❤ ¡GANASTE! Teto está feliz 🎤 Obtuviste ${limit} *🥖 Baguettes*. Total: ${users.limit} *🥖 Baguettes*.`, m, rcanal)
     } else {
       users.limit -= limit
-      conn.reply(m.chat, `💙 Perdiste. Se restaron ${limit} *🌱 Cebollines*. Total: ${users.limit} *🌱 Cebollines*.`, m, rcanal)
+      conn.reply(m.chat, `❤ Perdiste... ¡Pero Teto te anima a seguir intentando! 🎵 Se restaron ${limit} *🥖 Baguettes*. Total: ${users.limit} *🥖 Baguettes*.`, m, rcanal)
     }
 
     

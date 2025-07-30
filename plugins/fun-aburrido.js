@@ -3,9 +3,7 @@ import path from 'path';
 
 let handler = async (m, { conn }) => {
     let name2 = conn.getName(m.sender); 
-    m.react('🌱'); 
-    
-    let str = `💚${name2} está aburrido/a🥱.`.trim();
+    m.react('🥖');    let str = `💚${name2} está aburrido/a🥱.`.trim();
 
     
     if (m.isGroup){
