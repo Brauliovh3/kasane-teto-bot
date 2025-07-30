@@ -128,10 +128,9 @@ Este proyecto está bajo la Licencia GPL-3.0.
 
 ## 💖 **Créditos**
 
-- **Tema Original**: Blue Archive (modificado para Kasane Teto)
-- **Baileys**: [@WhiskeySockets](https://github.com/WhiskeySockets/Baileys)
+- **Tema Original**: Hatsune Miku (modificado para Kasane Teto)
 - **Inspiración**: Kasane Teto - La chimera virtual cantante
-- **Desarrollado con ❤**: Por fans de Teto
+- **Desarrollado con ❤**: Por (ㅎㅊDEPOOLㅊㅎ)
 
 ---
 
