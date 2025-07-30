@@ -1,6 +1,6 @@
 # ❤ KASANE TETO BOT ❤
 ### 🥖 *Bot de WhatsApp Multi-Device con la personalidad de Teto* 🎤
-<img>https://files.catbox.moe/hx106s.jpg</img>
+<img>(https://files.catbox.moe/hx106s.jpg)</img>
 <div align="center">
 
   [![Node.js](https://img.shields.io/badge/Node.js-18.x-green.svg)](https://nodejs.org/)
