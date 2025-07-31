@@ -36,7 +36,9 @@ let handler = async function (m, { conn, text, usedPrefix, command }) {
   user.registered = true
   
   let sn = createHash('md5').update(m.sender).digest('hex')
-  let img = await conn.profilePictureUrl(m.sender, 'image').catch(_ => 'https://i.pinimg.com/736x/b9/5c/6c/b95c6c806c4e8ca3485056672315972b.jpg')
+  
+  // Imagen temática de Kasane Teto para el registro
+  let img = 'https://files.catbox.moe/hx106s.jpg'
   
   let now = new Date()
   let date = now.toLocaleDateString('es-ES', { 
@@ -54,7 +56,7 @@ let handler = async function (m, { conn, text, usedPrefix, command }) {
   let studentId = `${age}${sn.slice(0, 4).toUpperCase()}`
   
   let txt = `┏━━━━━━━━━━━━━━━━━━━━━┓\n`
-  txt += `┃   � KASANE TETO MUSIC � ┃\n`
+  txt += `┃   🎤 KASANE TETO MUSIC 🎤 ┃\n`
   txt += `┃REGISTRO MUSICAL COMPLETADO┃\n`
   txt += `┗━━━━━━━━━━━━━━━━━━━━━━━━━━┛\n\n`
   
@@ -74,7 +76,7 @@ let handler = async function (m, { conn, text, usedPrefix, command }) {
   txt += `🥖 Ya puedes usar todos los comandos musicales del bot.\n`
   txt += `🎵 Usa .menu para ver todas las canciones y funciones disponibles.`
   
-  await conn.sendFile(m.chat, img, 'registro.jpg', txt, m)
+  await conn.sendFile(m.chat, img, 'teto_registro.jpg', txt, m)
 }
 
 handler.help = ['reg', 'register', 'verificar']
