@@ -1,7 +1,7 @@
 {
   "users": {
     "51942685079@s.whatsapp.net": {
-      "exp": 386,
+      "exp": 389,
       "limit": 10,
       "registered": false,
       "name": "+51 942 685 079",
@@ -17,7 +17,7 @@
       "premiumTime": 0
     },
     "141807421759536@lid": {
-      "exp": 99,
+      "exp": 124,
       "limit": 22,
       "registered": true,
       "name": "depool",
@@ -284,6 +284,12 @@
       "success": 2,
       "last": 1753974314570,
       "lastSuccess": 1753974314570
+    },
+    "rpg-stars.js": {
+      "total": 2,
+      "success": 2,
+      "last": 1753974878235,
+      "lastSuccess": 1753974878235
     }
   },
   "msgs": {},
