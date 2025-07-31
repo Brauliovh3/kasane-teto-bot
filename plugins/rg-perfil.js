@@ -151,8 +151,8 @@ let handler = async (m, { conn, usedPrefix, command }) => {
     txt += `│ ➤ ${progressBar} ${xpProgress.toString().padStart(3)}%│\n`;
     txt += `│ ➤ ${formatText(`${formatNumber(exp - min)}/${formatNumber(xp)} siguiente`)}│\n`;
     txt += `├─────────────────────────┤\n`;
-    txt += `│ 🎫 Créditos Estudiantiles│\n`;
-    txt += `│ ➤ ${formatText(`${formatNumber(limit)} Créditos`)}│\n`;
+    txt += `│ 🥖 Baguettes de Teto    │\n`;
+    txt += `│ ➤ ${formatText(`${formatNumber(limit)} Baguettes`)}│\n`;
     txt += `├─────────────────────────┤\n`;
     txt += `│ ⭐ Estado Premium      │\n`;
     txt += `│ ➤ ${formatText(prem ? '✅ Activo' : '❌ Inactivo')}│\n`;

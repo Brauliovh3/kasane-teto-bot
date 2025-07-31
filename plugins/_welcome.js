@@ -48,16 +48,16 @@ export async function before(m, {conn, participants, groupMetadata}) {
 🥖 Un fan se ha graduado... 🥖
 ┏━━━━━━━━━━━━━━━━━━━━━━━━━┓
 ┃ ❤ Fan: @${m.messageStubParameters[0].split`@`[0]}
-┃ 🎓 Decisión: Transferencia voluntaria
-┃ 💌 Estado: Siguiendo su propio camino
+┃ � Decisión: Cambio de estudio musical
+┃ 💌 Estado: Siguiendo su propia melodía
 ┗━━━━━━━━━━━━━━━━━━━━━━━━━┛
-😢 Los caminos estudiantiles a veces se separan...
-🌿 ¡Pero los recuerdos permanecerán para siempre! ✨
-💚 Nozomi te desea lo mejor en tu nueva aventura~ 🎀
-🌸 ¡Siempre tendrás un lugar en nuestros corazones! 🌸
+😢 Los caminos musicales a veces se separan...
+🥖 ¡Pero las canciones permanecerán para siempre! ✨
+❤ Kasane Teto te desea lo mejor en tu nueva aventura musical~ �
+� ¡Siempre tendrás un lugar en nuestros corazones! �
 🎆Sigue nuestro canal🚂
 💙https://whatsapp.com/channel/0029VajYamSIHphMAl3ABi1o
-💚══════◆【 🌟 】◆══════💚`
+❤══════◆【 � 】◆══════❤`
     
     await conn.sendAi(m.chat, botname, textbot, kick, img, img, canal, estilo)
   }

@@ -74,7 +74,7 @@ const defaultMenu = {
 
 ─────────────────────────────
 🌟 *¿Necesitas ayuda?* Escribe *#help [comando]*
-🎤 *Empresa:* ${textbot || 'Teto Industries'}
+🎤 *Empresa:* ${textbot || 'BVH3 Industries'}
 ─────────────────────────────`,
 }
 

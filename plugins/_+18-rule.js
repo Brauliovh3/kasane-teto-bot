@@ -14,7 +14,7 @@ const handler = async (m, { command, conn, usedPrefix }) => {
   let otros = comandos.filter(c => c !== command);
   let [random1, random2] = otros.sort(() => 0.5 - Math.random()).slice(0, 2);
 
-  const wm = '💚TACHIBANA NOZOMI💚'; 
+  const wm = '❤KASANE TETO❤'; 
 
   await conn.sendMessage(m.chat, {
     image: { url: haha },

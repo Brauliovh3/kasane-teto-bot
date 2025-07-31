@@ -1,7 +1,7 @@
 {
   "users": {
     "51942685079@s.whatsapp.net": {
-      "exp": 649,
+      "exp": 768,
       "limit": 10,
       "registered": false,
       "name": "+51 942 685 079",
@@ -17,7 +17,7 @@
       "premiumTime": 0
     },
     "141807421759536@lid": {
-      "exp": 428,
+      "exp": 736,
       "limit": 22,
       "registered": true,
       "name": "depool",
@@ -33,7 +33,7 @@
       "premiumTime": 0
     },
     "88141704769638@lid": {
-      "exp": 324,
+      "exp": 381,
       "limit": 10,
       "registered": true,
       "name": "Kasane teto",
@@ -124,7 +124,7 @@
       "level": 0
     },
     "54494998098001@lid": {
-      "exp": 87,
+      "exp": 198,
       "limit": 10,
       "registered": true,
       "name": "ghost",
@@ -154,7 +154,7 @@
       "level": 0
     },
     "54873039089749@lid": {
-      "exp": 19,
+      "exp": 54,
       "limit": 10,
       "registered": false,
       "name": "ＣＨＡＳＫＩ",
@@ -199,7 +199,7 @@
       "level": 0
     },
     "120363400346692613@g.us": {
-      "exp": 8,
+      "exp": 12,
       "limit": 10,
       "registered": false,
       "name": {},
@@ -210,7 +210,40 @@
       "banned": false,
       "useDocument": true,
       "bank": 0,
-      "level": 0
+      "level": 0,
+      "premium": false,
+      "premiumTime": 0
+    },
+    "51988514570@s.whatsapp.net": {
+      "exp": 124,
+      "limit": 10,
+      "registered": false,
+      "name": "(ㅎㅊDEPOOLㅊㅎ)",
+      "age": -1,
+      "regTime": -1,
+      "afk": -1,
+      "afkReason": "",
+      "banned": false,
+      "useDocument": true,
+      "bank": 0,
+      "level": 0,
+      "premium": false,
+      "premiumTime": 0
+    },
+    "127660000858143@lid": {
+      "exp": 9,
+      "limit": 10,
+      "registered": false,
+      "age": -1,
+      "regTime": -1,
+      "afk": -1,
+      "afkReason": "",
+      "banned": false,
+      "useDocument": true,
+      "bank": 0,
+      "level": 0,
+      "premium": false,
+      "premiumTime": 0
     }
   },
   "chats": {
@@ -293,20 +326,30 @@
       "antiToxic": false,
       "nsfw": false,
       "expired": 0
+    },
+    "51988514570@s.whatsapp.net": {
+      "isBanned": false,
+      "bienvenida": true,
+      "antiLink": false,
+      "antiLink2": false,
+      "onlyLatinos": false,
+      "antiToxic": false,
+      "nsfw": false,
+      "expired": 0
     }
   },
   "stats": {
     "sticker-sticker.js": {
-      "total": 7,
-      "success": 7,
-      "last": 1753971537586,
-      "lastSuccess": 1753971537586
+      "total": 8,
+      "success": 8,
+      "last": 1753976884212,
+      "lastSuccess": 1753976884212
     },
     "main-menu.js": {
-      "total": 9,
-      "success": 9,
-      "last": 1753976349247,
-      "lastSuccess": 1753976349247
+      "total": 10,
+      "success": 10,
+      "last": 1753977136829,
+      "lastSuccess": 1753977136829
     },
     "youtube-play.js": {
       "total": 4,
@@ -315,10 +358,10 @@
       "lastSuccess": 1753975403486
     },
     "game-math_answer.js": {
-      "total": 4,
-      "success": 4,
-      "last": 1753975446421,
-      "lastSuccess": 1753975446421
+      "total": 8,
+      "success": 8,
+      "last": 1753977683493,
+      "lastSuccess": 1753977683493
     },
     "rg-reg.js": {
       "total": 6,
@@ -345,22 +388,22 @@
       "lastSuccess": 1753972612212
     },
     "rpg-waifu.js": {
-      "total": 8,
-      "success": 5,
-      "last": 1753974215170,
-      "lastSuccess": 1753974215170
+      "total": 10,
+      "success": 7,
+      "last": 1753977967248,
+      "lastSuccess": 1753977967248
     },
     "rpg-coleccion.js": {
-      "total": 3,
-      "success": 3,
-      "last": 1753974221128,
-      "lastSuccess": 1753974221128
-    },
-    "rpg-save.js": {
       "total": 4,
       "success": 4,
-      "last": 1753974128531,
-      "lastSuccess": 1753974128531
+      "last": 1753977981967,
+      "lastSuccess": 1753977981967
+    },
+    "rpg-save.js": {
+      "total": 6,
+      "success": 6,
+      "last": 1753977976070,
+      "lastSuccess": 1753977976070
     },
     "rpg-bank.js": {
       "total": 2,
@@ -409,6 +452,12 @@
       "success": 2,
       "last": 1753976679692,
       "lastSuccess": 1753976679692
+    },
+    "rpg-baguettes.js": {
+      "total": 4,
+      "success": 4,
+      "last": 1753977101806,
+      "lastSuccess": 1753977101806
     }
   },
   "msgs": {},
