@@ -76,7 +76,10 @@ let handler = async function (m, { conn, text, usedPrefix, command }) {
   txt += `🥖 Ya puedes usar todos los comandos musicales del bot.\n`
   txt += `🎵 Usa .menu para ver todas las canciones y funciones disponibles.`
   
-  await conn.sendFile(m.chat, img, 'teto_registro.jpg', txt, m)
+  await conn.sendMessage(m.chat, {
+    image: { url: img },
+    caption: txt
+  }, { quoted: m })
 }
 
 handler.help = ['reg', 'register', 'verificar']
