@@ -14,7 +14,7 @@ export async function before(m, { isAdmin, isBotAdmin }) {
 
     if (isAdmin) {
       return m.reply(
-        `*「💚 ANTI LINKS 💚」*\n${user}, has enviado un enlace, pero como eres SENSEI, no puedo eliminarlo.`
+        `*「❤ ANTI LINKS ❤」*\n${user}, has enviado un enlace, pero como eres el DIRECTOR, no puedo eliminarlo.`
       );
     }
 
@@ -28,7 +28,7 @@ export async function before(m, { isAdmin, isBotAdmin }) {
       await this.sendMessage(
         m.chat,
         {
-          text: `*「💚 ANTI LINKS 💚」*\n${user}, está prohibido enviar enlaces sin ser SENSEI. Has sido expulsado del grupo.`,
+          text: `*「❤ ANTI LINKS ❤」*\n${user}, está prohibido enviar enlaces sin ser el DIRECTOR. Has sido expulsado del grupo.`,
           mentions: [m.sender],
         }
       );

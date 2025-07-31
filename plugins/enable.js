@@ -101,7 +101,7 @@ let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isR
     default:
       if (!/[01]/.test(command)) return m.reply(`
 ╭━━━━━━━━━━━━━━━━━━━━━━━╮
-│ 💚 *Tachibana Nozomi Configuración* 💚
+│ ❤ *❤KASANE TETO❤ Configuración* ❤
 ╰━━━━━━━━━━━━━━━━━━━━━━━╯
 📋 *LISTA DE OPCIONES DISPONIBLES*
 *Configurar Kasane Teto Bot*
@@ -153,8 +153,8 @@ let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isR
   )) : 'N/A'}*
 │ ${isAll ? '🌐 Aplicado globalmente' : isUser ? '👤 Aplicado al usuario' : '👥 Aplicado al grupo'}
 │ 
-│ 🚂 Gracias por usar a Tachibana Nozomi
-╰─────❬ 💚 *Tachibana Nozomi* 💚 ❭─────╯
+│ 🥖 Gracias por usar a ❤KASANE TETO❤
+╰─────❬ ❤ *❤KASANE TETO❤* ❤ ❭─────╯
 `.trim())
 }
 handler.help = ['enable', 'disable']

@@ -1,1 +1,298 @@
-
+{
+  "users": {
+    "51942685079@s.whatsapp.net": {
+      "exp": 386,
+      "limit": 10,
+      "registered": false,
+      "name": "+51 942 685 079",
+      "age": -1,
+      "regTime": -1,
+      "afk": -1,
+      "afkReason": "",
+      "banned": false,
+      "useDocument": true,
+      "bank": 0,
+      "level": 0,
+      "premium": false,
+      "premiumTime": 0
+    },
+    "141807421759536@lid": {
+      "exp": 99,
+      "limit": 22,
+      "registered": true,
+      "name": "depool",
+      "age": 18,
+      "regTime": 1753970802976,
+      "afk": -1,
+      "afkReason": "",
+      "banned": false,
+      "useDocument": true,
+      "bank": 0,
+      "level": 0,
+      "premium": false,
+      "premiumTime": 0
+    },
+    "88141704769638@lid": {
+      "exp": 231,
+      "limit": 10,
+      "registered": true,
+      "name": "Kasane teto",
+      "age": 16,
+      "regTime": 1753971594829,
+      "afk": -1,
+      "afkReason": "",
+      "banned": false,
+      "useDocument": true,
+      "bank": 0,
+      "level": 0,
+      "premium": false,
+      "premiumTime": 0
+    },
+    "259996449255602@lid": {
+      "exp": 2,
+      "limit": 10,
+      "registered": false,
+      "name": "💙 HATSUNE MIKU 💙",
+      "age": -1,
+      "regTime": -1,
+      "afk": -1,
+      "afkReason": "",
+      "banned": false,
+      "useDocument": true,
+      "bank": 0,
+      "level": 0,
+      "premium": false,
+      "premiumTime": 0
+    },
+    "202284923375632@lid": {
+      "exp": 3,
+      "limit": 10,
+      "registered": false,
+      "name": "𝕯𝖆𝖓𝖓𝖎𝖊𝖑(>///<)",
+      "age": -1,
+      "regTime": -1,
+      "afk": -1,
+      "afkReason": "",
+      "banned": false,
+      "useDocument": true,
+      "bank": 0,
+      "level": 0
+    },
+    "124361163993209@lid": {
+      "exp": 55397,
+      "limit": 10,
+      "registered": true,
+      "name": "Tsu-nitsu.",
+      "age": 17,
+      "regTime": 1753972597530,
+      "afk": -1,
+      "afkReason": "",
+      "banned": false,
+      "useDocument": true,
+      "bank": 0,
+      "level": 0,
+      "premium": false,
+      "premiumTime": 0
+    },
+    "165472372809788@lid": {
+      "exp": 31,
+      "limit": 10,
+      "registered": false,
+      "name": "ChrisMJ",
+      "age": -1,
+      "regTime": -1,
+      "afk": -1,
+      "afkReason": "",
+      "banned": false,
+      "useDocument": true,
+      "bank": 0,
+      "level": 0,
+      "premium": false,
+      "premiumTime": 0
+    },
+    "120363315369913363@newsletter": {
+      "exp": 2,
+      "limit": 10,
+      "registered": false,
+      "age": -1,
+      "regTime": -1,
+      "afk": -1,
+      "afkReason": "",
+      "banned": false,
+      "useDocument": true,
+      "bank": 0,
+      "level": 0
+    },
+    "54494998098001@lid": {
+      "exp": 87,
+      "limit": 10,
+      "registered": true,
+      "name": "ghost",
+      "age": 17,
+      "regTime": 1753974103546,
+      "afk": -1,
+      "afkReason": "",
+      "banned": false,
+      "useDocument": true,
+      "bank": 0,
+      "level": 0,
+      "premium": false,
+      "premiumTime": 0
+    },
+    "269475274326018@lid": {
+      "exp": 10,
+      "limit": 10,
+      "registered": false,
+      "name": "🄻𝕦 🧧̸̷᮫ִּ๋͚࣭֟፝ׄ݊",
+      "age": -1,
+      "regTime": -1,
+      "afk": -1,
+      "afkReason": "",
+      "banned": false,
+      "useDocument": true,
+      "bank": 0,
+      "level": 0
+    }
+  },
+  "chats": {
+    "51942685079@s.whatsapp.net": {
+      "isBanned": false,
+      "bienvenida": true,
+      "antiLink": false,
+      "antiLink2": false,
+      "onlyLatinos": false,
+      "antiToxic": false,
+      "nsfw": false,
+      "expired": 0
+    },
+    "120363418728369185@g.us": {
+      "isBanned": false,
+      "bienvenida": true,
+      "antiLink": false,
+      "antiLink2": false,
+      "onlyLatinos": false,
+      "antiToxic": false,
+      "nsfw": false,
+      "expired": 0
+    },
+    "120363222484877852@g.us": {
+      "isBanned": false,
+      "bienvenida": true,
+      "antiLink": false,
+      "antiLink2": false,
+      "onlyLatinos": false,
+      "antiToxic": false,
+      "nsfw": false,
+      "expired": 0
+    },
+    "120363315369913363@newsletter": {
+      "isBanned": false,
+      "bienvenida": true,
+      "antiLink": false,
+      "antiLink2": false,
+      "onlyLatinos": false,
+      "antiToxic": false,
+      "nsfw": false,
+      "expired": 0
+    },
+    "120363418652921848@g.us": {
+      "isBanned": false,
+      "bienvenida": true,
+      "antiLink": false,
+      "antiLink2": false,
+      "onlyLatinos": false,
+      "antiToxic": false,
+      "nsfw": false,
+      "expired": 0
+    }
+  },
+  "stats": {
+    "sticker-sticker.js": {
+      "total": 7,
+      "success": 7,
+      "last": 1753971537586,
+      "lastSuccess": 1753971537586
+    },
+    "main-menu.js": {
+      "total": 8,
+      "success": 8,
+      "last": 1753973002068,
+      "lastSuccess": 1753973002068
+    },
+    "youtube-play.js": {
+      "total": 3,
+      "success": 3,
+      "last": 1753970697538,
+      "lastSuccess": 1753970697538
+    },
+    "game-math_answer.js": {
+      "total": 2,
+      "success": 2,
+      "last": 1753970700381,
+      "lastSuccess": 1753970700381
+    },
+    "rg-reg.js": {
+      "total": 5,
+      "success": 5,
+      "last": 1753974104629,
+      "lastSuccess": 1753974104629
+    },
+    "rpg-minar.js": {
+      "total": 6,
+      "success": 6,
+      "last": 1753974251102,
+      "lastSuccess": 1753974251102
+    },
+    "rpg-work.js": {
+      "total": 3,
+      "success": 3,
+      "last": 1753972607751,
+      "lastSuccess": 1753972607751
+    },
+    "rpg-daily.js": {
+      "total": 2,
+      "success": 2,
+      "last": 1753972612212,
+      "lastSuccess": 1753972612212
+    },
+    "rpg-waifu.js": {
+      "total": 8,
+      "success": 5,
+      "last": 1753974215170,
+      "lastSuccess": 1753974215170
+    },
+    "rpg-coleccion.js": {
+      "total": 3,
+      "success": 3,
+      "last": 1753974221128,
+      "lastSuccess": 1753974221128
+    },
+    "rpg-save.js": {
+      "total": 4,
+      "success": 4,
+      "last": 1753974128531,
+      "lastSuccess": 1753974128531
+    },
+    "rpg-bank.js": {
+      "total": 2,
+      "success": 2,
+      "last": 1753974303995,
+      "lastSuccess": 1753974303995
+    },
+    "rpg-shop.js": {
+      "total": 2,
+      "success": 2,
+      "last": 1753974314570,
+      "lastSuccess": 1753974314570
+    }
+  },
+  "msgs": {},
+  "sticker": {},
+  "settings": {
+    "51942685079@s.whatsapp.net": {
+      "self": false,
+      "autoread": false,
+      "status": 0
+    }
+  }
+}

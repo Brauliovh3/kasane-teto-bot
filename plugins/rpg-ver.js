@@ -50,7 +50,7 @@ function getCharacterImage(characterName) {
         "💗LUKA🪷": "./storage/epicos/luka_epico.png",
         
         
-        "💙HATSUNE MIKU💙": "./storage/ultra/miku_ultra.png",
+        "❤KASANE TETO❤": "./storage/ultra/teto_ultra.png",
         "💛AKITA NERU💛": "./storage/ultra/neru_ultra.png",
         "💗EMU OTORI💗": "./storage/ultra/emu_ultra.png",
         "❤KASANE TETO❤": "./storage/ultra/teto_ultra.png",

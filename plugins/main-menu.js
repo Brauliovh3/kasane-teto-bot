@@ -28,7 +28,7 @@ let tags = {
 const defaultMenu = {
   before: `
 ╭─────────────────────────╮
-│❤ ���� ��� ���𝗧 ❤ │
+│❤ 🅺🅰🆂🅰🅽🅴 🆃🅴🆃🅾 ❤ │
 ╰─────────────────────────╯
 
 ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
@@ -52,7 +52,7 @@ const defaultMenu = {
 
 %readmore
 ┏━━━━━━━━━━━━━━━━━━━┓
-┃� 𝗠𝗘𝗡𝗨́ 𝗗𝗘 𝗖𝗢𝗠𝗔𝗡𝗗𝗢𝗦┃
+┃ 𝗠𝗘𝗡𝗨́ 𝗗𝗘 𝗖𝗢𝗠𝗔𝗡𝗗𝗢𝗦┃
 ┗━━━━━━━━━━━━━━━━━━━┛
 `.trimStart(),
   header: `
@@ -178,19 +178,19 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
     
     
     let blueArchiveImages = [
-      'https://media.tenor.com/a_ie-YlAL1YAAAAe/blue-archive-tachibana-nozomi.png', 
-      'https://i.pinimg.com/736x/eb/a4/fb/eba4fbad60730bc11bbabef0966a69b2.jpg', 
-      'https://i.pinimg.com/736x/9b/1f/8d/9b1f8d438239d54c06af279bffbcfae3.jpg', 
+      'https://www.youtube.com/watch?v=qszpx0Hot8k', 
+      'https://es.pinterest.com/pin/889109151434765003/', 
+      'https://www.youtube.com/watch?v=qszpx0Hot8k', 
     ]
     
     let img = `./storage/img/menu.jpg`
-    await m.react('🌸') 
+    await m.react('❤') 
     
     
     await conn.sendFile(m.chat, img, 'blue_archive_menu.jpg', text.trim(), m, null, rcanal)
 
   } catch (e) {
-    conn.reply(m.chat, '❌ Lo siento, Sensei. Hay un error en el sistema del menú.', m)
+    conn.reply(m.chat, '❌ Lo siento, querido fan. Hay un error en el sistema del menú musical.', m)
     throw e
   }
 }

@@ -409,16 +409,16 @@ export async function handler(chatUpdate) {
 
 global.dfail = (type, m, conn, usedPrefix) => {
     let msg = {
-        rowner: `❤ Este comando solo puede ser utilizado por el *COMANDANTE SUPREMO* del Club de Ingeniería.`,
-        owner: `❤ Este comando solo puede ser utilizado por el *PRESIDENTE* del Club de Ingeniería y comandantes autorizados.`,
-        mods: `❤ Este comando solo puede ser utilizado por los *MODERADORES ESTRATÉGICOS* del Club de Ingeniería.`,
-        premium: `❤ Este comando requiere *MEMBRESÍA PREMIUM* del Club de Ingeniería para acceder a funciones avanzadas.`,
-        group: `❤ Este comando solo puede ser utilizado en *UNIDADES TÁCTICAS* (grupos). Las operaciones individuales no están permitidas.`,
-        private: `💚🌿 ¡Sensei! Este comando solo puede ser utilizado en mi *CANAL PRIVADO DE COMUNICACIÓN*. Las operaciones grupales no están permitidas.`,
-        admin: `💚🌿 ¡Sensei! Este comando solo puede ser utilizado por los *ADMINISTRADORES* de la unidad táctica. Se requieren permisos de liderazgo.`,
-        botAdmin: `💚🌿 ¡Sensei! Como estratega del Club de Ingeniería, necesito ser *ADMINISTRADORA* de esta unidad táctica para ejecutar operaciones de gestión.`,
-        unreg: `💚🌿 ¡Sensei! Para usar este comando debes estar *REGISTRADO* en la base de datos del Club de Ingeniería.\n\n🌿 Para registrarte en el sistema, utiliza:\n*${usedPrefix || '.'}reg nombre.edad*\n\n📝 Ejemplo: *${usedPrefix || '.'}reg Nozomi.17*\n\n"La organización estratégica requiere identificación adecuada atentamente." Tachibana-Nozomi 💚`,
-        restrict: `💚🌿 ¡Sensei! Esta función está *DESHABILITADA* por protocolos de seguridad del Club de Ingeniería. Contacta con el administrador del sistema.`  
+        rowner: `❤ Este comando solo puede ser utilizado por el *PRODUCTOR MUSICAL SUPREMO* de ❤KASANE TETO❤.`,
+        owner: `❤ Este comando solo puede ser utilizado por el *DIRECTOR MUSICAL* de ❤KASANE TETO❤ y productores autorizados.`,
+        mods: `❤ Este comando solo puede ser utilizado por los *MODERADORES MUSICALES* de ❤KASANE TETO❤.`,
+        premium: `❤ Este comando requiere *MEMBRESÍA PREMIUM* de la Academia Musical ❤KASANE TETO❤ para acceder a funciones avanzadas.`,
+        group: `❤ Este comando solo puede ser utilizado en *GRUPOS MUSICALES* (grupos). Las operaciones individuales no están permitidas.`,
+        private: `❤🥖 ¡Querido fan! Este comando solo puede ser utilizado en mi *CANAL PRIVADO DE MÚSICA*. Las actuaciones grupales no están permitidas.`,
+        admin: `❤🥖 ¡Querido fan! Este comando solo puede ser utilizado por los *ADMINISTRADORES* del grupo musical. Se requieren permisos de liderazgo.`,
+        botAdmin: `❤🥖 ¡Querido fan! Como cantante principal, necesito ser *ADMINISTRADORA* de este grupo musical para ejecutar operaciones de gestión.`,
+        unreg: `❤🥖 ¡Querido fan! Para usar este comando debes estar *REGISTRADO* en la Academia Musical de ❤KASANE TETO❤.\n\n🥖 Para registrarte en el sistema, utiliza:\n*${usedPrefix || '.'}reg nombre.edad*\n\n📝 Ejemplo: *${usedPrefix || '.'}reg Teto.15*\n\n"La música requiere identificación adecuada para una mejor experiencia musical." ❤KASANE TETO❤ 🥖`,
+        restrict: `❤🥖 ¡Querido fan! Esta función está *DESHABILITADA* por protocolos de seguridad de la Academia Musical ❤KASANE TETO❤. Contacta con el administrador del sistema.`  
     }[type]
     if (msg) return conn.reply(m.chat, msg, m, rcanal).then(_ => m.react('💢'))
 }
@@ -426,6 +426,6 @@ global.dfail = (type, m, conn, usedPrefix) => {
 let file = global.__filename(import.meta.url, true)
 watchFile(file, async () => {
     unwatchFile(file)
-    console.log(chalk.magenta("💚🌿 [Club de Ingeniería] Se actualizó 'handler.js' - Nozomi"))
+    console.log(chalk.magenta("❤🥖 [Academia Musical KASANE TETO] Se actualizó 'handler.js' - ❤TETO❤"))
     if (global.reloadHandler) console.log(await global.reloadHandler())
 })

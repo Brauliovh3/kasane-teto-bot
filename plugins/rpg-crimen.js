@@ -7,7 +7,7 @@ let handler = async (m, { conn, text, command, usedPrefix }) => {
   let tiempoEspera = 5 * 60
   if (cooldowns[m.sender] && Date.now() - cooldowns[m.sender] < tiempoEspera * 1000) {
     let tiempoRestante = segundosAHMS(Math.ceil((cooldowns[m.sender] + tiempoEspera * 1000 - Date.now()) / 1000))
-    m.reply(`💚 ¡Sensei! Ya has realizado una travesura recientemente~ Espera *⏱ ${tiempoRestante}* antes de tu próxima aventura para evitar que las Fuerzas de Seguridad de Kivotos te atrapen. ¡Nozomi necesita ser más cuidadosa! 🌿`)
+    m.reply(`❤ ¡Querido fan! Ya has realizado una aventura musical recientemente~ Espera *⏱ ${tiempoRestante}* antes de tu próxima actuación para evitar agotar tu voz. ¡❤KASANE TETO❤ necesita descansar! 🥖`)
     return
   }
   
@@ -26,24 +26,24 @@ let handler = async (m, { conn, text, command, usedPrefix }) => {
   
   
   const successMessages = [
-    "¡Operación de infiltración completada con éxito!",
-    "¡La estrategia de Nozomi funcionó perfectamente!",
-    "¡Misión de reconocimiento exitosa!",
-    "¡El poder del Club de Ingeniería prevalece!"
+    "¡Actuación musical completada con éxito!",
+    "¡La melodía de ❤KASANE TETO❤ funcionó perfectamente!",
+    "¡Sesión de grabación exitosa!",
+    "¡El poder de la música prevalece!"
   ]
   
   const failMessages = [
-    "¡Oh no! Las Fuerzas de Seguridad de Kivotos te descubrieron...",
-    "¡La operación falló! Nozomi necesita mejorar sus tácticas...",
-    "¡Sensei, fuiste demasiado imprudente esta vez!",
-    "¡El Club de Ingeniería tendrá que replanear la estrategia!"
+    "¡Oh no! Se desafinó la canción...",
+    "¡La actuación falló! ❤KASANE TETO❤ necesita mejorar su técnica...",
+    "¡Querido fan, fuiste demasiado imprudente esta vez!",
+    "¡La Academia Musical tendrá que replanear la presentación!"
   ]
   
   const partialMessages = [
-    "¡Misión parcialmente exitosa! Pero hubo complicaciones...",
-    "¡Lograste escapar, pero no todo salió según el plan!",
-    "¡La retirada táctica fue necesaria!",
-    "¡Nozomi salvó la situación en el último momento!"
+    "¡Actuación parcialmente exitosa! Pero hubo algunos errores...",
+    "¡Lograste cantar, pero no todo salió según la partitura!",
+    "¡La improvisación fue necesaria!",
+    "¡❤KASANE TETO❤ salvó la situación en el último momento!"
   ]
   
   switch (randomOption) {
@@ -52,7 +52,7 @@ let handler = async (m, { conn, text, command, usedPrefix }) => {
       users[randomUserId].limit -= amountTaken
       let successMsg = successMessages[Math.floor(Math.random() * successMessages.length)]
       conn.sendMessage(m.chat, {
-        text: `💚🌿 ${successMsg}\n\n¡Sensei logró obtener ${amountTaken} 🌱 Cebollines de @${randomUserId.split("@")[0]} usando las tácticas del Club de Ingeniería!\n\n*Nozomi añade +${amountTaken} 🌱 Cebollines al inventario de ${senderName}* ✨\n\n"¡Excelente trabajo, Sensei! ¡La planificación estratégica siempre da resultados!" - Nozomi 💚`,
+        text: `❤🥖 ${successMsg}\n\n¡Querido fan logró obtener ${amountTaken} 🥖 Baguettes de @${randomUserId.split("@")[0]} con una actuación musical increíble!\n\n*❤KASANE TETO❤ añade +${amountTaken} 🥖 Baguettes al inventario de ${senderName}* ✨\n\n"¡Excelente trabajo! ¡La música siempre da resultados!" - ❤KASANE TETO❤ 🥖`,
         contextInfo: { 
           mentionedJid: [randomUserId],
         }
@@ -63,7 +63,7 @@ let handler = async (m, { conn, text, command, usedPrefix }) => {
       let amountSubtracted = Math.min(Math.floor(Math.random() * (senderLimit - minAmount + 1)) + minAmount, maxAmount)
       users[senderId].limit -= amountSubtracted
       let failMsg = failMessages[Math.floor(Math.random() * failMessages.length)]
-      conn.reply(m.chat, `💚🌿 ${failMsg}\n\n*Se restaron -${amountSubtracted} 🌱 Cebollines a ${senderName} como penalización* 😔\n\n"No te preocupes, Sensei... ¡La próxima vez tendremos una mejor estrategia! El Club de Ingeniería aprende de cada fallo." - Nozomi 💚`, m)
+      conn.reply(m.chat, `❤🥖 ${failMsg}\n\n*Se restaron -${amountSubtracted} 🥖 Baguettes a ${senderName} como penalización* 😔\n\n"No te preocupes, querido fan... ¡La próxima vez tendremos una mejor melodía! La Academia Musical ❤KASANE TETO❤ aprende de cada nota." 🥖`, m)
       break
       
     case 2:
@@ -72,7 +72,7 @@ let handler = async (m, { conn, text, command, usedPrefix }) => {
       users[randomUserId].limit -= smallAmountTaken
       let partialMsg = partialMessages[Math.floor(Math.random() * partialMessages.length)]
       conn.sendMessage(m.chat, {
-        text: `💚🌿 ${partialMsg}\n\n¡Solo lograste obtener ${smallAmountTaken} 🌱 Cebollines de @${randomUserId.split("@")[0]} antes de la retirada táctica!\n\n*Nozomi añade +${smallAmountTaken} 🌱 Cebollines al inventario de ${senderName}* ✨\n\n"¡No está mal para una misión de emergencia, Sensei! El Club de Ingeniería siempre encuentra una salida." - Nozomi 💚`,
+        text: `❤🥖 ${partialMsg}\n\n¡Solo lograste obtener ${smallAmountTaken} 🥖 Baguettes de @${randomUserId.split("@")[0]} antes de finalizar la canción!\n\n*❤KASANE TETO❤ añade +${smallAmountTaken} 🥖 Baguettes al inventario de ${senderName}* ✨\n\n"¡No está mal para una improvisación musical! La Academia Musical ❤KASANE TETO❤ siempre encuentra una melodía." 🥖`,
         contextInfo: { 
           mentionedJid: [randomUserId],
         }

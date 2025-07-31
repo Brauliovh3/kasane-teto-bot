@@ -17,24 +17,24 @@ const handler = async (m, {isOwner, isAdmin, conn, text, participants, args, com
   const groupName = groupMetadata.subject;
   
   
-  const nozomiMessages = [
+  const tetoMessages = [
     "¡Atención estudiantes de Millennium!",
     "Reunión de emergencia del consejo estudiantil",
     "¡Todos a formar! Necesito su atención",
-    "Convocatoria general de la academia",
-    "¡Sensei requiere la presencia de todos!",
+    "Convocatoria general de la Academia Musical",
+    "¡El director requiere la presencia de todos!",
     "Asamblea estudiantil en progreso"
   ];
   
-  const randomMessage = nozomiMessages[Math.floor(Math.random() * nozomiMessages.length)];
+  const randomMessage = tetoMessages[Math.floor(Math.random() * tetoMessages.length)];
   
   let teks = `
 ╭─────────────────────╮
-│💙 𝗧𝗔𝗖𝗛𝗜𝗕𝗔𝗡𝗔 𝗡𝗢𝗭𝗢𝗠𝗜 💙  │
+│❤ ❤�𝗔�𝗡� ���𝗢❤ ❤  │
 ╰─────────────────────╯
 
 ┏━━━━━━━━━━━━━━━━━━━━━━━┓
-┃  🌸 ${randomMessage}  
+┃  ❤ ${randomMessage}  
 ┃  📚 Grupo: ${groupName}
 ┃  👥 Miembros convocados: ${participants.length}
 ┗━━━━━━━━━━━━━━━━━━━━━━━┛
@@ -46,7 +46,7 @@ ${oi ? `💬 **Mensaje:** ${oi}\n` : ''}
 `;
 
   
-  const memberEmojis = ['🌸', '💙', '⭐', '💫', '🎯', '📚', '🌟', '💎', '🎪', '🔷'];
+  const memberEmojis = ['❤', '🥖', '⭐', '💫', '🎯', '📚', '🌟', '💎', '🎪', '🔷'];
   
   for (let i = 0; i < participants.length; i++) {
     const mem = participants[i];
@@ -59,14 +59,14 @@ ${oi ? `💬 **Mensaje:** ${oi}\n` : ''}
 ┏━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 ┃  🎓 Millennium Science School    ┃
 ┃  📊 Sistema de Información Estudiantil
-┃  🌸 Tachibana Nozomi - Asistente   ┃
+┃  🥖 Kasane Teto - Cantante Principal   ┃
 ┗━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 
 > ✨ *¡Todos los estudiantes han sido notificados!*
 > 🎯 *Reportar presencia es obligatorio*
 
 ────────────────────────────
-💙 *Blue Archive* | 🏫 *Millennium Academy*`;
+❤ *Kasane Teto* | 🏫 *Academia Musical*`;
 
   
   await conn.sendMessage(m.chat, {
@@ -75,7 +75,7 @@ ${oi ? `💬 **Mensaje:** ${oi}\n` : ''}
   });
   
  
-  await m.react('🌸');
+  await m.react('❤');
 };
 
 handler.help = ['tagall <mensaje>', 'invocar <mensaje>', 'convocar <mensaje>'];

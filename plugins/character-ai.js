@@ -14,7 +14,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
   }
 }
 handler.tags = ["tools"]
-handler.help = ["Miku *<texto>*"]
-handler.command = ["Hatsune", "miku"]
+handler.help = ["Teto *<texto>*"]
+handler.command = ["kasane", "teto"]
 handler.register = true 
 export default handler

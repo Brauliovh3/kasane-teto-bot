@@ -1,1 +1,24 @@
-
+{
+  "users": {
+    "141807421759536@lid": {
+      "name": "(ㅎㅊDEPOOLㅊㅎ)",
+      "characters": [
+        {
+          "name": "Luka Megurine 2006",
+          "rarity": "rara",
+          "obtainedAt": "2025-07-31T14:59:33.689Z"
+        }
+      ]
+    },
+    "54494998098001@lid": {
+      "name": "¸✯🛐卂丂Ꮆㄖ尺乇🌻",
+      "characters": [
+        {
+          "name": "❤KASANE TETO❤",
+          "rarity": "ultra rara",
+          "obtainedAt": "2025-07-31T15:02:08.345Z"
+        }
+      ]
+    }
+  }
+}

@@ -38,12 +38,12 @@ let handler = async (m, { conn }) => {
     const userId = m.sender;
     const userName = (await conn.getName(userId)) || 'Desconocido'; 
 
-    if (!global.db.waifu) return m.reply('💙 Error del sistema. Intenta usar .rw primero.');
+    if (!global.db.waifu) return m.reply('❤ Error del sistema. Intenta usar .rw primero.');
 
     try {
         
         if (!m.quoted) {
-            return m.reply('💙 Debes responder a un mensaje del bot con un personaje.');
+            return m.reply('❤ Debes responder a un mensaje del bot con un personaje.');
         }
 
         
@@ -54,12 +54,12 @@ let handler = async (m, { conn }) => {
 
         
         if (currentWaifuOwner && currentWaifuOwner !== userId) {
-            return m.reply('💙 No puedes reclamar este personaje. Pertenece a otro usuario.');
+            return m.reply('❤ No puedes reclamar este personaje. Pertenece a otro usuario.');
         }
 
         
         if (!global.db.waifu.waifus[userId]) {
-            return m.reply('💙 No hay personaje disponible para guardar o ya fue reclamado.');
+            return m.reply('❤ No hay personaje disponible para guardar o ya fue reclamado.');
         }
 
         let db = loadDatabase();
@@ -79,7 +79,7 @@ let handler = async (m, { conn }) => {
         
         if (waifuExists) {
             delete global.db.waifu.waifus[userId];
-            return m.reply('💙 Ya tienes este personaje en tu colección.');
+            return m.reply('❤ Ya tienes este personaje en tu colección.');
         }
        
         db.users[userId].characters.push({
@@ -93,12 +93,12 @@ let handler = async (m, { conn }) => {
         delete global.db.waifu.waifus[userId];
         
         let message = `✅ ¡VOCALOID GUARDADA! ✅\n\n`;
-        message += `💙 Waifu: ${currentWaifu.name}\n`;
+        message += `❤ Waifu: ${currentWaifu.name}\n`;
         message += `💎 Rareza: ${currentWaifu.rarity.toUpperCase()}\n`;
         message += `🤖 Usuario: ${userName}\n`;
         message += `🆔 ID: ${userId}\n`;
         message += `📚 Total en colección: ${db.users[userId].characters.length}\n`;
-        message += `💙 Usa .col o .coleccion para ver tu colección`;
+        message += `❤ Usa .col o .coleccion para ver tu colección`;
         
         return m.reply(message);
 

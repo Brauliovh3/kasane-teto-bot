@@ -73,26 +73,26 @@ let handler = async (m, { conn, usedPrefix }) => {
    let latensi = speed() - timestamp
    
    // Define textbot or use a default value if it doesn't exist
-   let textbot = global.textbot || '¡Gracias por usar Hatsune Miku Bot!'
+   let textbot = global.textbot || '¡Gracias por usar ❤KASANE TETO❤ Bot!'
    
    let txt = '`*⭒─ׄ─ׅ─ׄ─⭒ Info Bot ⭒─ׄ─ׅ─ׄ─⭒*`\n\n'
        txt += `╭── ︿︿︿︿︿ *⭒   ⭒   ⭒   ⭒   ⭒   ⭒*\n`
-       txt += `┊ ‹‹ *Status De* :: *💙HATSUNE MIKU💙*\n`
-       txt += `┊•*💙HATSUNE MIKU CHANNEL💙*\n`
-       txt += `╰─── 💙  ⌇ DEPOOL   ˚̩̥̩̥*̩̩͙🌱\n`
-       txt += `┊🪴 [ *Moneda* :: *🌱 Cebollines*\n`
+       txt += `┊ ‹‹ *Status De* :: *❤KASANE TETO❤*\n`
+       txt += `┊•*❤KASANE TETO CHANNEL❤*\n`
+       txt += `╰─── ❤  ⌇ KASANE TETO   ˚̩̥̩̥*̩̩͙🥖\n`
+       txt += `┊� [ *Moneda* :: *🥖 Baguettes*\n`
        txt += `┊🍟 [ *Prefijo* :: *【  ${usedPrefix}  】*\n`
        txt += `┊✨ [ *Plugins* :: *${totalf}*\n`
        txt += `┊☁️ [ *Sub-Bots* :: *${totalUsers || '0'}*\n`
        txt += `┊🍟 [ *Plataforma* :: *${platform()}*\n`
        txt += `┊🍁 [ *RAM* :: *${format(totalmem() - freemem())} / ${format(totalmem())}*\n`
-       txt += `┊🌸 [ *FreeRAM* :: *${format(freemem())}*\n`
+       txt += `┊❤ [ *FreeRAM* :: *${format(freemem())}*\n`
        txt += `┊🍄 [ *Speed* :: *${latensi.toFixed(4)} ms*\n`
        txt += `┊💐 [ *Comandos Ejecutados* :: *${formatNumber(totalStats)}*\n`
        txt += `┊🌴 [ *Grupos Registrados* :: *${formatNumber(totalchats)}*\n`
        txt += `┊🌺 [ *Registrados* :: *${formatNumber(totalreg)} Usuarios*\n`
        txt += `╰─────────\n\n`
-       txt += `> 💙 ${textbot}`
+       txt += `> ❤ ${textbot}`
 
    // Fix for the mimetype error: Check if the file exists or use a different approach
    try {

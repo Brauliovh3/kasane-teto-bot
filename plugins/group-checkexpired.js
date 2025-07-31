@@ -1,7 +1,7 @@
 
 let handler = async (m, { conn, args, usedPrefix, command }) => {
 	
-	if (global.db.data.chats[m.chat].expired < 1) return m.reply(`💙 Este grupo no está configurado para caducar.`)
+	if (global.db.data.chats[m.chat].expired < 1) return m.reply(`❤ Este grupo no está configurado para caducar.`)
     let who
     if (m.isGroup) who = args[1] ? args[1] : m.chat
     else who = args[1]
@@ -9,7 +9,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
     var nDays = 86400000 * args[0]
     var now = new Date() * 1
     
-    m.reply(`💙 Su alquiler expira en *${msToDate(global.db.data.chats[who].expired - now)}.*\n\n_Despues el bot saldrá automáticamente del grupo._`) 
+    m.reply(`❤ Su alquiler expira en *${msToDate(global.db.data.chats[who].expired - now)}.*\n\n_Despues el bot saldrá automáticamente del grupo._`) 
     
 }
 handler.help = ['checkexpired']

@@ -83,7 +83,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
     let prem = global.prems ? global.prems.includes(who.split`@`[0]) : false;
     
    
-    let bio = await conn.fetchStatus(who).catch(_ => ({ status: 'Vida diaria en Kivotos' }));
+    let bio = await conn.fetchStatus(who).catch(_ => ({ status: 'Vida musical diaria' }));
     let biot = bio.status || 'Sin estado';
     let pp = await conn.profilePictureUrl(who, 'image').catch(_ => 'https://i.ibb.co/tqWV67y/file.jpg');
   
@@ -166,7 +166,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
     txt += `│ 🔗 Enlace de Contacto  │\n`;
     txt += `│ ➤ ${formatText(`wa.me/${who.split`@`[0]}`)}│\n`;
     txt += `╰─────────────────────────╯\n`;
-    txt += `\n🏫 *SCHALE* - Academia General de Kivotos\n`;
+    txt += `\n🏫 *Academia Musical* - Academia General de ❤KASANE TETO❤\n`;
     txt += `📅 Generado: ${new Date().toLocaleDateString('es-ES')} ${new Date().toLocaleTimeString('es-ES', { hour12: false })}`;
 
    

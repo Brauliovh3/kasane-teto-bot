@@ -43,10 +43,10 @@ let handler = async (m, { conn }) => {
         
         collection.forEach(waifu => rarityCount[waifu.rarity.toLowerCase()]++);
         
-        let message = `╭━━━━『💙*VOCALOID COLLECTION*💙』━━━━╮\n\n`;
+        let message = `╭━━━━『❤*KASANE TETO COLLECTION*❤』━━━━╮\n\n`;
         
        
-        message += `❯💙*RESUMEN DE COLECCIÓN*💙❮\n`;
+        message += `❯❤*RESUMEN DE COLECCIÓN*❤❮\n`;
         message += `\n┌──『 Rareza 』───『 Cantidad 』──┐\n`;
         message += `│ 🔴 Legendaria  │ ${rarityCount['Legendaria'].toString().padEnd(3)} │ ${createBar(rarityCount['Legendaria'], 10)} │\n`;
         message += `│ 🟡 Ultra Rara  │ ${rarityCount['ultra rara'].toString().padEnd(3)} │ ${createBar(rarityCount['ultra rara'], 10)} │\n`;
@@ -94,7 +94,7 @@ let handler = async (m, { conn }) => {
         return conn.reply(m.chat, message, m);
     } catch (e) {
         console.error(e);
-        return m.reply('💙 Error al mostrar la colección. Intenta de nuevo.');
+        return m.reply('❤ Error al mostrar la colección. Intenta de nuevo.');
     }
 }
 

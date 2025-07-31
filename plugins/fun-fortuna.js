@@ -25,7 +25,7 @@ let handler = async (m, { conn }) => {
      porque ellos quieren que seas lo que ellos no pudieron.`
   ];
   
-  const emojis = ["🎆", "💚", "✨", "🎁", "🌟", "💫", "🚂", "🌈", "🎸", "💖"];
+  const emojis = ["🎆", "❤", "✨", "🎁", "🌟", "💫", "🚂", "🌈", "🎸", "💖"];
   
   
   const luckyNumbers = [];

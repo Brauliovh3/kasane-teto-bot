@@ -8,46 +8,46 @@ export async function before(m, {conn, participants, groupMetadata}) {
   let chat = global.db.data.chats[m.chat]
   
   if (chat.bienvenida && m.messageStubType == 27) {
-    let bienvenida = `💚═════◆【 KIVOTOS 】◆════💚
-🌸 ¡Un nuevo estudiante ha llegado! 🌸
+    let bienvenida = `❤═════◆【 ACADEMIA MUSICAL 】◆════❤
+🥖 ¡Un nuevo fan ha llegado! 🥖
 ┏━━━━━━━━━━━━━━━━━━━━━━━━━┓
-┃ 💚 Estudiante: @${m.messageStubParameters[0].split`@`[0]}
-┃ 🏫 Escuela: ${groupMetadata.subject}
-┃ 📚 Estado: ¡Matriculado exitosamente!
+┃ ❤ Fan: @${m.messageStubParameters[0].split`@`[0]}
+┃ 🏫 Academia: ${groupMetadata.subject}
+┃ 📚 Estado: ¡Registrado exitosamente!
 ┗━━━━━━━━━━━━━━━━━━━━━━━━━┛
-🎀 ¡Bienvenido a nuestro club de actividades! 🎀
-💚 Nozomi espera que disfrutes tu tiempo aquí~ ✨
-🌿 ¡Que tengas una experiencia académica increíble! 🌿
+🎀 ¡Bienvenido a nuestra Academia Musical! 🎀
+❤ ❤KASANE TETO❤ espera que disfrutes la música aquí~ ✨
+🥖 ¡Que tengas una experiencia musical increíble! 🥖
 🎆Sigue nuestro canal🚂
-💙https://whatsapp.com/channel/0029VajYamSIHphMAl3ABi1o 
-💚═════◆【 🎓 】◆═════💚`
+❤https://whatsapp.com/channel/0029VajYamSIHphMAl3ABi1o 
+❤═════◆【 🎓 】◆═════❤`
     
     await conn.sendAi(m.chat, botname, textbot, bienvenida, img, img, canal, estilo)
   }
   
   if (chat.bienvenida && m.messageStubType == 28) {
-    let bye = `💚══════◆【 KIVOTOS 】◆══════💚
+    let bye = `❤══════◆【 ACADEMIA MUSICAL 】◆══════❤
 🚫 ¡Acción disciplinaria ejecutada! 🚫
 ┏━━━━━━━━━━━━━━━━━━━━━━━━━┓
-┃ 💔 Estudiante: @${m.messageStubParameters[0].split`@`[0]}
+┃ 💔 Fan: @${m.messageStubParameters[0].split`@`[0]}
 ┃ 📋 Motivo: Expulsión del grupo
-┃ 🏫 Estado: Removido de la escuela
+┃ 🏫 Estado: Removido de la academia
 ┗━━━━━━━━━━━━━━━━━━━━━━━━━┛
-😔 Las reglas escolares deben ser respetadas...
-💚 Esperamos que reflexiones sobre tus acciones 🌿
-🎓 La disciplina es parte del crecimiento estudiantil
+😔 Las reglas de la academia deben ser respetadas...
+❤ Esperamos que reflexiones sobre tus acciones 🥖
+🎓 La disciplina es parte del crecimiento musical
 🎆Sigue nuestro canal🚂
-💙https://whatsapp.com/channel/0029VajYamSIHphMAl3ABi1o
-💚═══════◆【 ⚖️ 】◆═══════💚`
+❤https://whatsapp.com/channel/0029VajYamSIHphMAl3ABi1o
+❤═══════◆【 ⚖️ 】◆═══════❤`
     
     await conn.sendAi(m.chat, botname, textbot, bye, img, img, canal, estilo)
   }
   
   if (chat.bienvenida && m.messageStubType == 32) {
-    let kick = `💚══════◆【 KIVOTOS 】◆══════💚
-🌸 Un estudiante se ha graduado... 🌸
+    let kick = `❤══════◆【 ACADEMIA MUSICAL 】◆══════❤
+🥖 Un fan se ha graduado... 🥖
 ┏━━━━━━━━━━━━━━━━━━━━━━━━━┓
-┃ 💚 Estudiante: @${m.messageStubParameters[0].split`@`[0]}
+┃ ❤ Fan: @${m.messageStubParameters[0].split`@`[0]}
 ┃ 🎓 Decisión: Transferencia voluntaria
 ┃ 💌 Estado: Siguiendo su propio camino
 ┗━━━━━━━━━━━━━━━━━━━━━━━━━┛

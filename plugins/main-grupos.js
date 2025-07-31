@@ -6,14 +6,14 @@ const more = String.fromCharCode(8206)
 const readMore = more.repeat(4001)
 let txt = `*Hola!, te invito a unirte a los grupos oficiales de del Bot para convivir con la comunidad :D*
 
-1- 💙HATSUNE MIKU💙
-*🌱* ${global.group}
+1- ❤KASANE TETO❤
+*🥖* ${global.group}
 
-2- 💙HATSUNE MIKU💙
-*🌱* ${global.group2}
+2- ❤KASANE TETO❤
+*🥖* ${global.group2}
 
-3- 💙HATSUNE MIKU💙
-*🌱* ${global.group3}
+3- ❤KASANE TETO❤
+*🥖* ${global.group3}
 
 *─ׄ─ׅ─ׄ⭒─ׄ─ׅ─ׄ⭒─ׄ─ׅ─ׄ⭒─ׄ─ׅ─ׄ⭒─ׄ─ׅ─ׄ⭒─ׄ─ׅ─ׄ*
 

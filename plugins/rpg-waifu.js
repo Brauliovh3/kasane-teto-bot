@@ -149,7 +149,7 @@ const waifuList = [
    
     
     {
-        name: "💙HATSUNE MIKU💙",
+        name: "❤KASANE TETO❤",
         rarity: "ultra rara",
         probability: 1.429,
         img: "./storage/ultra/miku_ultra.png"

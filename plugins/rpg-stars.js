@@ -6,7 +6,7 @@ let handler = async (m, {conn, usedPrefix}) => {
     let user = global.db.data.users[who]
     let name = conn.getName(who)
     if (!(who in global.db.data.users)) return conn.reply(m.chat, '❤ El usuario no se encuentra en la base de datos de Teto.', m, rcanal).then(_ => m.react('✖️'))
-    let img = await (await fetch(`https://w7.pngwing.com/pngs/531/1011/png-transparent-hatsune-miku-vocaloid-chibi-holography-anime-hatsune-miku-fictional-characters-manga-chibi.png`)).buffer()
+    let img = await (await fetch(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSLOzG8KWlQXNJOhCBzKyGHwHhZ8YHjKg4lQ&s`)).buffer()
     let txt = ` –  *C E B O L L I N E S  -  U S E R*\n\n`
         txt += `┌  ❤  *Nombre* : ${user.name}\n`
         txt += `│  ❤  *Baguettes* : ${toNum(user.limit)} ( *${user.limit}* )\n`
