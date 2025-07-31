@@ -1,7 +1,7 @@
 {
   "users": {
     "51942685079@s.whatsapp.net": {
-      "exp": 389,
+      "exp": 649,
       "limit": 10,
       "registered": false,
       "name": "+51 942 685 079",
@@ -17,7 +17,7 @@
       "premiumTime": 0
     },
     "141807421759536@lid": {
-      "exp": 124,
+      "exp": 428,
       "limit": 22,
       "registered": true,
       "name": "depool",
@@ -33,7 +33,7 @@
       "premiumTime": 0
     },
     "88141704769638@lid": {
-      "exp": 231,
+      "exp": 324,
       "limit": 10,
       "registered": true,
       "name": "Kasane teto",
@@ -49,7 +49,7 @@
       "premiumTime": 0
     },
     "259996449255602@lid": {
-      "exp": 2,
+      "exp": 12,
       "limit": 10,
       "registered": false,
       "name": "💙 HATSUNE MIKU 💙",
@@ -152,6 +152,65 @@
       "useDocument": true,
       "bank": 0,
       "level": 0
+    },
+    "54873039089749@lid": {
+      "exp": 19,
+      "limit": 10,
+      "registered": false,
+      "name": "ＣＨＡＳＫＩ",
+      "age": -1,
+      "regTime": -1,
+      "afk": -1,
+      "afkReason": "",
+      "banned": false,
+      "useDocument": true,
+      "bank": 0,
+      "level": 0,
+      "premium": false,
+      "premiumTime": 0
+    },
+    "51946675244@s.whatsapp.net": {
+      "exp": 171,
+      "limit": 10,
+      "registered": true,
+      "name": "Jesús.",
+      "age": 15,
+      "regTime": 1753975674015,
+      "afk": -1,
+      "afkReason": "",
+      "banned": false,
+      "useDocument": true,
+      "bank": 0,
+      "level": 0,
+      "premium": false,
+      "premiumTime": 0
+    },
+    "153829253324921@lid": {
+      "exp": 10,
+      "limit": 10,
+      "registered": false,
+      "age": -1,
+      "regTime": -1,
+      "afk": -1,
+      "afkReason": "",
+      "banned": false,
+      "useDocument": true,
+      "bank": 0,
+      "level": 0
+    },
+    "120363400346692613@g.us": {
+      "exp": 8,
+      "limit": 10,
+      "registered": false,
+      "name": {},
+      "age": -1,
+      "regTime": -1,
+      "afk": -1,
+      "afkReason": "",
+      "banned": false,
+      "useDocument": true,
+      "bank": 0,
+      "level": 0
     }
   },
   "chats": {
@@ -204,6 +263,36 @@
       "antiToxic": false,
       "nsfw": false,
       "expired": 0
+    },
+    "120363300278044381@g.us": {
+      "isBanned": false,
+      "bienvenida": true,
+      "antiLink": false,
+      "antiLink2": false,
+      "onlyLatinos": false,
+      "antiToxic": false,
+      "nsfw": false,
+      "expired": 0
+    },
+    "120363400346692613@g.us": {
+      "isBanned": false,
+      "bienvenida": true,
+      "antiLink": false,
+      "antiLink2": false,
+      "onlyLatinos": false,
+      "antiToxic": false,
+      "nsfw": false,
+      "expired": 0
+    },
+    "120363420438757118@g.us": {
+      "isBanned": false,
+      "bienvenida": true,
+      "antiLink": false,
+      "antiLink2": false,
+      "onlyLatinos": false,
+      "antiToxic": false,
+      "nsfw": false,
+      "expired": 0
     }
   },
   "stats": {
@@ -214,28 +303,28 @@
       "lastSuccess": 1753971537586
     },
     "main-menu.js": {
-      "total": 8,
-      "success": 8,
-      "last": 1753973002068,
-      "lastSuccess": 1753973002068
+      "total": 9,
+      "success": 9,
+      "last": 1753976349247,
+      "lastSuccess": 1753976349247
     },
     "youtube-play.js": {
-      "total": 3,
-      "success": 3,
-      "last": 1753970697538,
-      "lastSuccess": 1753970697538
+      "total": 4,
+      "success": 4,
+      "last": 1753975403486,
+      "lastSuccess": 1753975403486
     },
     "game-math_answer.js": {
-      "total": 2,
-      "success": 2,
-      "last": 1753970700381,
-      "lastSuccess": 1753970700381
+      "total": 4,
+      "success": 4,
+      "last": 1753975446421,
+      "lastSuccess": 1753975446421
     },
     "rg-reg.js": {
-      "total": 5,
-      "success": 5,
-      "last": 1753974104629,
-      "lastSuccess": 1753974104629
+      "total": 6,
+      "success": 6,
+      "last": 1753975676098,
+      "lastSuccess": 1753975676098
     },
     "rpg-minar.js": {
       "total": 6,
@@ -290,6 +379,36 @@
       "success": 2,
       "last": 1753974878235,
       "lastSuccess": 1753974878235
+    },
+    "downloader-aptoide.js": {
+      "total": 8,
+      "success": 8,
+      "last": 1753976648506,
+      "lastSuccess": 1753976648506
+    },
+    "group-banchat.js": {
+      "total": 2,
+      "success": 2,
+      "last": 1753976663120,
+      "lastSuccess": 1753976663120
+    },
+    "group-unbanchat.js": {
+      "total": 2,
+      "success": 2,
+      "last": 1753976668135,
+      "lastSuccess": 1753976668135
+    },
+    "group-link.js": {
+      "total": 2,
+      "success": 2,
+      "last": 1753976671294,
+      "lastSuccess": 1753976671294
+    },
+    "group-kick.js": {
+      "total": 2,
+      "success": 2,
+      "last": 1753976679692,
+      "lastSuccess": 1753976679692
     }
   },
   "msgs": {},

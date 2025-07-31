@@ -9,6 +9,7 @@ import axios from 'axios'
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
 
 global.owner = [
+  ['141807421759536', '(ㅎㅊDEPOOLㅊㅎ)', true],
   ['51988514570', '(ㅎㅊDEPOOLㅊㅎ)', true]
 ]
 
@@ -23,7 +24,7 @@ global.packname = ``
 global.author = '{\n "bot": {\n   "name": "❤KASANE TETO❤",\n     "author": "(ㅎㅊDEPOOLㅊㅎ)",\n   "status_bot": "active"\n }\n}'
 global.wait = '🥖 *Espera un momento, estoy preparando baguettes... ❤*'
 global.botname = '❤KASANE TETO❤'
-global.textbot = `Powered By TETO INDUSTRIES`
+global.textbot = `Powered By BVH3 INDUSTRIES`
 global.listo = '*¡Aquí tienes tu baguette! 🥖❤*'
 global.namechannel = '❤KASANE TETO CHANNEL❤'
 

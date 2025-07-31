@@ -36,7 +36,7 @@ let handler = async function (m, { conn, text, usedPrefix, command }) {
   user.registered = true
   
   let sn = createHash('md5').update(m.sender).digest('hex')
-  let img = await conn.profilePictureUrl(m.sender, 'image').catch(_ => 'https://i.pinimg.com/736x/eb/a4/fb/eba4fbad60730bc11bbabef0966a69b2.jpg')
+  let img = await conn.profilePictureUrl(m.sender, 'image').catch(_ => 'https://i.pinimg.com/736x/b9/5c/6c/b95c6c806c4e8ca3485056672315972b.jpg')
   
   let now = new Date()
   let date = now.toLocaleDateString('es-ES', { 

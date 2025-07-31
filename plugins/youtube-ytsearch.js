@@ -7,15 +7,15 @@ let handler = async (m, { conn, usedPrefix, command, text }) => {
     let results = await Starlights.ytsearch(text)
     if (!results || !results.length) return conn.reply(m.chat, `No se encontraron resultados.`, m, rcanal)
     let img = await (await fetch(`${results[0].thumbnail}`)).buffer()
-    let txt = '`💙  Y T  -  S E A R C H  💙`'
+    let txt = '`❤  Y T  -  S E A R C H  ❤`'
     results.forEach((video, index) => {
         txt += `\n\n`
         txt += `	🎤  *Nro* : ${index + 1}\n`
-        txt += `	🎤  *Titulo* : ${video.title}\n`
-        txt += `	🎤  *Duración* : ${video.duration}\n`
-        txt += `	🎤  *Publicado* : ${video.published}\n`
-        txt += `	🎤  *Autor* : ${video.author}\n`
-        txt += `	🎤  *Url* : ${video.url}`
+        txt += `	❤  *Titulo* : ${video.title}\n`
+        txt += `	❤  *Duración* : ${video.duration}\n`
+        txt += `	❤  *Publicado* : ${video.published}\n`
+        txt += `	❤  *Autor* : ${video.author}\n`
+        txt += `	❤  *Url* : ${video.url}`
     })
 await conn.sendFile(m.chat, img, 'thumbnail.jpg', txt, m, null, rcanal)
 await m.react('✅')

@@ -56,6 +56,55 @@ npm start
 
 ---
 
+## 📱 **Instalación en Termux (Android)**
+
+### Prerrequisitos para Termux
+- **Termux** instalado desde F-Droid (recomendado)
+- Al menos 2GB de almacenamiento libre
+
+### 1. Actualizar Termux
+```bash
+pkg update && pkg upgrade
+```
+
+### 2. Instalar dependencias
+```bash
+pkg install nodejs git
+```
+
+### 3. Instalar paquetes adicionales (opcional)
+```bash
+pkg install ffmpeg imagemagick
+```
+
+### 4. Clonar e instalar el bot
+```bash
+git clone https://github.com/Brauliovh3/kasane-teto-bot.git
+cd kasane-teto-bot
+npm install
+```
+
+### 5. Ejecutar en Termux
+```bash
+npm start
+```
+
+### 6. Mantener activo (opcional)
+Para que el bot siga funcionando cuando cierres Termux:
+```bash
+pkg install screen
+screen -S teto-bot npm start
+```
+Para volver a la sesión: `screen -r teto-bot`
+
+### Consejos para Termux:
+- 🔋 **Batería**: Desactiva la optimización de batería para Termux
+- 📂 **Permisos**: Otorga permisos de almacenamiento con `termux-setup-storage`
+- 💾 **Espacio**: El bot ocupa aproximadamente 500MB-1GB
+- 🔄 **Reinicio**: Si se cierra, simplemente ejecuta `npm start` de nuevo
+
+---
+
 ## 🥖 **Sistema de Baguettes**
 
 El bot utiliza **🥖 Baguettes** como moneda principal:
