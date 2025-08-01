@@ -64,10 +64,18 @@ export async function handler(chatUpdate) {
                     user.level = 0
                 if (!isNumber(user.bank))
                     user.bank = 0
+                if (!('premium' in user))
+                    user.premium = false
+                if (!user.premium)
+                    user.premiumTime = 0
+                if (!('characters' in user))
+                    user.characters = []
             } else
                 global.db.data.users[m.sender] = {
                     exp: 0,
                     limit: 10,
+                    premium: false,
+                    premiumTime: 0,
                     registered: false,
                     name: m.name,
                     age: -1,
@@ -78,6 +86,7 @@ export async function handler(chatUpdate) {
                     useDocument: true,
                     bank: 0,
                     level: 0,
+                    characters: []
                 }
             let chat = global.db.data.chats[m.chat]
             if (typeof chat !== 'object')

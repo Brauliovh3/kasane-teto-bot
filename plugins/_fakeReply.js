@@ -1,5 +1,8 @@
 import fetch from 'node-fetch'
 
+// Initialize rcanal immediately to avoid undefined errors
+global.rcanal = global.rcanal || {}
+
 export async function before(m, { conn }) {
 let img = await (await fetch(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSLOzG8KWlQXNJOhCBzKyGHwHhZ8YHjKg4lQ&s`)).buffer()
 

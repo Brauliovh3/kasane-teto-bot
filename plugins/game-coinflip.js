@@ -19,10 +19,10 @@ let handler = async (m, { conn, text, command, usedPrefix }) => {
 
     if (esGanador) {
         global.db.data.users[m.sender].limit += 1000
-        conn.reply(m.chat, `🎰 La moneda cayó en *${text}*, acabas de ganar *1000 🥖 Baguettes*`, m, rcanal)
+        conn.reply(m.chat, `🎰 La moneda cayó en *${resultado}*, acabas de ganar *1000 🥖 Baguettes*`, m, rcanal)
     } else {
         global.db.data.users[m.sender].limit -= 500
-        conn.reply(m.chat, `🎰 La moneda cayó en *${text}*, acabas de perder *500 🥖 Baguettes*`, m, rcanal)
+        conn.reply(m.chat, `🎰 La moneda cayó en *${resultado}*, acabas de perder *500 🥖 Baguettes*`, m, rcanal)
     }
 }
 
