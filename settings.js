@@ -61,6 +61,35 @@ global.maxwarn = '2' // máxima advertencias
 
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
 
+// Variables globales adicionales para funcionalidad
+global.tempDir = './tmp'
+global.__dirname = (url) => {
+  const __filename = fileURLToPath(url)
+  return __filename.substring(0, __filename.lastIndexOf('/'))
+}
+
+// Configuración de soporte para herramientas
+global.support = {
+  ffmpeg: true,
+  ffprobe: true,
+  ffmpegWebp: true,
+  convert: true,
+  magick: false,
+  gm: false,
+  find: false
+}
+
+// APIs para descargas
+global.APIs = {
+  fgmods: {
+    url: 'https://api-fgmods.ddns.net',
+    key: 'fg-dylux'
+  },
+  apis: 'https://api.boxmine.xyz'
+}
+
+//*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
+
 let file = fileURLToPath(import.meta.url)
 watchFile(file, () => {
   unwatchFile(file)

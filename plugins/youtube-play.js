@@ -56,6 +56,14 @@ const fetchAPI = async (url, type) => {
   const audioEndpoints = [
     {
       url: async () => {
+        const response = await fetch(`https://api.ryzendesu.vip/api/downloader/ytmp3?url=${url}`);
+        const data = await response.json();
+        return data;
+      },
+      extract: (data) => data.url
+    },
+    {
+      url: async () => {
         const response = await fetch(`https://api.vreden.my.id/api/ytmp3?url=${url}`);
         const data = await response.json();
         return data;
@@ -72,11 +80,11 @@ const fetchAPI = async (url, type) => {
     },
     {
       url: async () => {
-        const response = await fetch(`https://api.neoxr.eu/api/youtube?url=${url}&type=audio&apikey=GataDios`);
+        const response = await fetch(`https://api.agatz.xyz/api/ytmp3?url=${url}`);
         const data = await response.json();
         return data;
       },
-      extract: (data) => data.data?.url
+      extract: (data) => data.data?.download
     },
     {
       url: async () => {
@@ -91,27 +99,19 @@ const fetchAPI = async (url, type) => {
   const videoEndpoints = [
     {
       url: async () => {
-        const response = await fetch(`https://api.neoxr.eu/api/youtube?url=${url}&type=video&quality=360p&apikey=GataDios`);
+        const response = await fetch(`https://api.ryzendesu.vip/api/downloader/ytmp4?url=${url}`);
         const data = await response.json();
         return data;
       },
-      extract: (data) => data.data?.url
+      extract: (data) => data.url
     },
     {
       url: async () => {
-        const response = await fetch(`${global.APIs?.fgmods?.url || 'https://api-fgmods.ddns.net'}/downloader/ytmp4?url=${url}&apikey=${global.APIs?.fgmods?.key || 'fg-dylux'}`);
+        const response = await fetch(`https://api.agatz.xyz/api/ytmp4?url=${url}`);
         const data = await response.json();
         return data;
       },
-      extract: (data) => data.result?.dl_url
-    },
-    {
-      url: async () => {
-        const response = await fetch(`https://exonity.tech/api/ytdlp2-faster?apikey=adminsepuh&url=${url}`);
-        const data = await response.json();
-        return data;
-      },
-      extract: (data) => data.result?.media?.mp4
+      extract: (data) => data.data?.download
     },
     {
       url: async () => {
@@ -131,11 +131,11 @@ const fetchAPI = async (url, type) => {
     },
     {
       url: async () => {
-        const response = await fetch(`${global.APIs?.apis || 'https://api.boxmine.xyz'}/download/ytmp4?url=${url}`);
+        const response = await fetch(`${global.APIs?.fgmods?.url || 'https://api-fgmods.ddns.net'}/downloader/ytmp4?url=${url}&apikey=${global.APIs?.fgmods?.key || 'fg-dylux'}`);
         const data = await response.json();
         return data;
       },
-      extract: (data) => data.status ? data.data?.download?.url : null
+      extract: (data) => data.result?.dl_url
     }
   ];
 
@@ -143,17 +143,20 @@ const fetchAPI = async (url, type) => {
   
   for (const endpoint of endpoints) {
     try {
+      console.log(`Intentando endpoint para ${type}...`);
       const data = await endpoint.url();
       const downloadUrl = endpoint.extract(data);
       
-      if (downloadUrl) {
+      if (downloadUrl && downloadUrl.includes('http')) {
+        console.log(`✅ Endpoint exitoso para ${type}: ${downloadUrl.substring(0, 50)}...`);
         return { download: downloadUrl };
       }
     } catch (error) {
-      console.error(`Error con endpoint:`, error);
+      console.error(`❌ Error con endpoint ${type}:`, error.message);
     }
   }
   
+  console.error(`❌ Todos los endpoints fallaron para ${type}`);
   return { download: null };
 };
 
@@ -331,8 +334,13 @@ let handler = async (m, { conn, text }) => {
   if (!text) return conn.reply(m.chat, '❤ Ingresa el nombre de la canción o video que deseas buscar. 🎵🥖', m);
 
   try {
+    // Mensaje de búsqueda
+    await conn.reply(m.chat, '❤ Buscando tu música... 🔍🥖', m);
+    
     let res = await search(text);
-    if (!res || res.length === 0) return conn.reply(m.chat, '❤ No se encontraron resultados para tu búsqueda. 🚫', m);
+    if (!res || res.length === 0) {
+      return conn.reply(m.chat, '❤ No se encontraron resultados para tu búsqueda. Intenta con otro término. 🚫', m);
+    }
 
     const { title, thumbnail, timestamp, views, ago, videoId } = res[0];
 
@@ -366,7 +374,7 @@ let handler = async (m, { conn, text }) => {
       if (RM.message.extendedTextMessage?.contextInfo?.stanzaId === SM.key.id && !handleOnce.has(msgId)) {
         handleOnce.add(msgId);
         
-    await conn.sendMessage(UC, { react: { text: '🎵', key: RM.key } });
+        await conn.sendMessage(UC, { react: { text: '🎵', key: RM.key } });
         let success = false;
         let option = 0;
 
@@ -398,8 +406,8 @@ let handler = async (m, { conn, text }) => {
       }
     });
   } catch (error) {
-    console.error(error);
-    conn.reply(m.chat, '❤ Ocurrió un error al procesar tu solicitud. 🚫', m);
+    console.error('Error en play command:', error);
+    conn.reply(m.chat, '❤ Ocurrió un error al procesar tu solicitud. Intenta más tarde. 🚫', m);
   }
 };
 
