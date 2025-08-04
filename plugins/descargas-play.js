@@ -69,7 +69,7 @@ author = author || 'no encontrado'
 }
 handler.command = handler.help = ['play', 'música', 'musica', 'song', 'cancion']
 handler.tags = ['descargas']
-handler.group = true
+handler.group = false
 
 export default handler
 
@@ -87,3 +87,4 @@ function formatViews(views) {
   }
   return views.toString()
 }
+
