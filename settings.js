@@ -38,7 +38,7 @@ global.miniurl = fs.readFileSync('./storage/img/miniurl.mp4')
 global.group = 'https://chat.whatsapp.com/HEuy1hZCPmX1WaJ6zffQuV'
 global.group2 = 'https://chat.whatsapp.com/HEuy1hZCPmX1WaJ6zffQuV'
 global.group3 = 'https://chat.whatsapp.com/HEuy1hZCPmX1WaJ6zffQuV'
-global.canal = 'https://whatsapp.com/channel/0029VajYamSIHphMAl3ABi1o'
+global.canal = 'https://whatsapp.com/channel/0029Vb6Wxwa3mFY1RdeE9K1c'
 
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
 
